@@ -1,38 +1,141 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.portfolio {
+  background-color: #df95bd;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar ul {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar li {
+  display: inline;
+  margin: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a:hover {
+  color: #0056b3;
+}
+
+h1 {
+  color: #007bff;
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.divider {
+  border-top: 2px solid #ddd;
+  margin: 20px 0;
+}
+
+.about-section.show,
+.education-section.show,
+.skills-section.show {
+  display: block;
+}
+
+.about-section,
+.education-section,
+.skills-section {
+  display: none;
+}
+
+.about-section h2,
+.education-section h2,
+.skills-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.about-section p,
+.education-section p,
+.skills-section p {
+  font-size: 18px;
+  color: #444;
+}
+
+.experience-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.experience-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.experience-section p {
+  font-size: 18px;
+  color: #444;
+}
+
+.contact-section.show {
+  display: block;
+}
+
+.contact-section {
+  display: none;
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #444;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer a {
+  margin: 0 20px;
+  
+  font-size: 30px;
+  color: #5f2cbd;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #0056b3;
 }
